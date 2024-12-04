@@ -11,4 +11,18 @@ Animal类，动物的基本类型
 
 """
 
-        
+
+
+class Animal:
+        def __init__(self, name, age):
+            self.name = name
+            self.age = age
+            
+        def make_sound(self):
+            print('{} is making sound'.format(self.name))
+            
+        def move(self):
+            print('{} is moving'.format(self.name))
+            
+        def __str__(self):
+            return 'Name: {}, Age: {}'.format(self.name, self.age)
